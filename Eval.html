@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="design.css">
+	<style>
+		
+		label {color: rgb(187,40,40);
+				font-weight: bold;
+				text-align: center;
+				font-size: 130%;
+				display: inline-block;
+				width: 0px;
+				margin-right: 100px;}
+		input,textarea {margin: 20px 100px 0px 0px;
+						border: solid rgb(187,40,40);}
+		p {text-align: center;
+			color: rgb(187,40,40);
+			font-weight: bold;
+			font-family: Bodoni MT black;
+			font-size: 250%;}
+		form {text-align: center;}
+		#button {background-color: rgb(187,40,40);
+				  padding: 8px 15px;
+				  display: inline-block;
+				  margin-left: 100px;
+				  font-size: 20px;
+				  font-weight: bold;}
+		#button:hover {background-color: rgba(255,255,255,0.3);
+						color: rgb(187,40,40);}	
+        #Moya:hover {background-color: rgba(255,255,255,0.3);
+						color: rgb(187,40,40);}
+        #Moya {float:right ; border: 3px solid rgb(187,40,40); background-color: rgb(187,40,40); text-decoration: none; padding: 0.3%; font-size: larger;}
+		#aide {position: relative;
+        bottom: 55px;}
+	</style>
+</head>
+<body>
+<header>
+	<table>
+		<tr>
+			<td></td>
+			<td colspan="2"><a href="accueil.html"><img src="Images/SOS-AUTO.png" width="180px" height="100px"></a></td>
+			<td><a href="accueil.html">Accueil</a></td>
+			<td><a href="apropos.html">A propos</a></td>
+			<td><a href="réparation.html">Réparation</a></td>
+			<td><a href="choixdereservation.html">Entretien</a></td>
+			<td><a href="diagnostic.html">Diagnostic</a></td>
+			<td><a href="showroom.html">Voitures Occasions</a></td>
+			<td></td>
+		</tr>
+	</table>
+</header>
+	<form method="post" action="Eval.php" name="Evaluation" style="display: flex; flex-direction: column;">
+		<p>Que Pensez vous de notre site ?</p>
+        
+		<style>
+label {margin:1%;
+font-size: 200%;}         
+.rate {
+    align-self: center;
+    align-content: flex-start;
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    width: 25%;
+    margin: 0%;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:rgb(102, 7, 7);
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+        </style>
+        
+        <div class="rate">
+            <h4 style="font-size: 150%; color: rgb(187,40,40); float: left;">Donnez Une Note sur 5 :</h6>
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+<div id="Inputs">
+		<label id="aide" for="Rqs" style="margin-right: 2%; width: 20%;">Aidez Nous a ameliorer notre site : </label>
+		<textarea id="Rqs" name="Rqs" cols="50" rows="10" placeholder="Ce que vous n'avez pas aimé "></textarea><br>
+		<input type="submit" name="Envoyer" value="Envoyer" id="button">
+</div>
+	</form>
+    <a id="Moya"  href="Moy.php">Afficher Moyenne des Notes</a></b>
+<footer>
+		<div>
+			<c>Nos services</c><br>
+			<br>
+			<d>
+				La réparation mécanique et carrosserie<br>
+				Le changement et l’entretien pneumatique<br>
+				La réparation et remplacement de pares brises<br>
+				La vente des voitures d’occasions
+			</d>
+		</div>
+		<div>
+			<c>Nos horaires</c><br>
+			<br>
+			<d>Lun-Ven: 7am-19pm</d>
+		</div>
+		<div>
+			<c>Contact</c><br>
+			<br>
+			<d>
+				18 bis rue du El Qods, rades<br>
+				Tel: 12 345 678<br>
+				Email: sos.automobile@gmail.com<br>
+				<img src="Images/facebook.png" width="40px" height="28px">
+				<img src="Images/instagram.jpg" width="40px" height="28px">
+				<br>
+			</d>
+		</div>	
+		<hr>
+			<e>Copyright ISG TUNIS</e>
+	</footer>
+</body>
+</html>

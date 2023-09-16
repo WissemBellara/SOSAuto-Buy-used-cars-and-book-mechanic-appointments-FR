@@ -1,0 +1,28 @@
+section {background-color: rgba(255,255,255,0.4);
+		margin: 50px 20px;}
+b {font-weight: bold;}
+aside {float: left;
+		margin: 0px 70px;
+		border-radius: 5px;
+		transition: 0.3s;}
+aside:hover{opacity: 0.6;}
+span {font-size: 105%;}
+H6 {font-size: 130%;
+	color: rgb(187,40,40);
+	margin: 15px;
+	font-family: Bodoni MT black;}
+H6::first-letter {font-size: 150%;
+				font-weight: bold;}
+p {font-size: 120%;
+	background-color: rgba(255,255,255,0.3);
+	padding: 13px;
+	margin: 50px;}
+p {
+	text-align: center;
+	font-weight: bold;
+	font-size:110%;}
+p::first-letter {text-transform: uppercase;}
+nav {text-align: center;
+	font-size: 140%;
+	font-weight: bold;}
+

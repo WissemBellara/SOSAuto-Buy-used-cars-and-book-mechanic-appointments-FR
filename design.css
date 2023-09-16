@@ -1,0 +1,24 @@
+body {background-image: url(Images/mecanique-auto.jpg);}
+tr,td{background-color: white;
+		height: 100px;
+		width: 300px;
+		text-align: center;
+		font-family: Bodoni MT black;}
+table {border-collapse: collapse;}
+a {color: black;
+	font-weight: bold;
+	font-size: 103%;}
+a:hover {color: rgb(187,40,40);
+		font-weight: bold;}	
+footer {clear: both;
+		margin-top: 200px;
+		text-align: center;
+		color: white;
+		background-color:rgb(187,40,40);}		
+div {display: inline-block;
+	display: inline-table;
+	margin:0px 125px 0px 65px;}
+c {font-weight: bold;
+	text-decoration: underline;
+	font-family: Bodoni MT black;}	
+
